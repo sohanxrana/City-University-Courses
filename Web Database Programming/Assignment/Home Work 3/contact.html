@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Sohan Rana Apurbo</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Sohan Rana Apurbo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resume.html">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login/Signup</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h1>Contact Me</h1>
+                <p>Have a question or project in mind? Feel free to reach out!</p>
+            </div>
+
+            <div class="row">
+                <!-- Contact Information -->
+                <div class="col-md-6 mb-4">
+                    <h2>Contact Information</h2>
+                    <ul class="list-unstyled">
+                        <li><strong>Phone:</strong> +8801874264850</li>
+                        <li><strong>Email:</strong> <a href="mailto:apurborahman1235@gmail.com">apurborahman1235@gmail.com</a></li>
+                        <li><strong>Location:</strong> Nabinagar, Ashulia, Savar, Dhaka-1344</li>
+                    </ul>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-md-6">
+                    <h2>Send Me a Message</h2>
+                    <form action="send_message.php" method="POST">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Your Name:</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Your Email:</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Subject:</label>
+                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter the subject" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message:</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-light text-center">
+        <div class="container">
+            <p><a href="Sohan_Rana_Apurbo_CV.pdf" download class="text-light">Download my CV</a></p>
+            <p><a href="index.html" class="text-light">Home</a> | <a href="resume.html" class="text-light">Resume</a> | <a href="about.html" class="text-light">About</a> | <a href="contact.html" class="text-light">Contact</a> | <a href="login.html" class="text-light">Login/Signup</a></p>
+            <p>&copy; 2024 Sohan Rana Apurbo. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
